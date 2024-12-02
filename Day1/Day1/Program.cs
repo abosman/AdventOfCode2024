@@ -21,7 +21,7 @@ void Part1()
     for (var i = 0; i < list1.Count; i++)
     {
         // calculate the distance between the two values
-        var distance = Math.Max(list1[i], list2[i]) - Math.Min(list1[i], list2[i]);
+        var distance = Math.Abs(list1[i] - list2[i]);
         Console.WriteLine($"Distance between {list1[i]} and {list2[i]} is {distance}");
         totalDistance += distance;
     }
